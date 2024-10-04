@@ -1,0 +1,29 @@
+---
+import Logo from "../components/Logo.astro";
+
+
+---
+<footer>
+    <Logo/>
+    <div class="redes">
+        <a href="https://www.facebook.com/acgmotos" target="_blank" rel= "noopener noreferer"><img src="svg/facebook.svg" alt="icono de facebook"></a>
+        <a href="https://instagram.com/acgmotos" target="_blank" rel= "noopener noreferer"><img src="svg/instagram.svg" alt="icono instagram"></a>
+        <a href="https://wa.me/573213048982?text=%C2%A1Hola!%20%F0%9F%91%8B%20Estoy%20interesado%20en%20sus%20productos%20de%20ACG%20Motos.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20detalles?%20%C2%A1Gracias" target="_blank" rel= "noopener noreferer"><img src="svg/whatsapp.svg" alt="icono WhatsApp"></a>
+        <a href="mailto:info@acgmotos.com" target="_blank" rel= "noopener noreferer"><img src="svg/mail.svg" alt="icono e-mail"></a>
+    </div>
+</footer>
+
+<style>
+    footer{
+        background-color: var(--c_enfasis);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        width: 32px;
+        margin: .5rem;
+    }
+</style>
