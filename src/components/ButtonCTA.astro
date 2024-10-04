@@ -1,0 +1,37 @@
+---
+interface Props {
+    text:string;
+    href:string;
+}
+
+const {text, href}=Astro.props;
+---
+
+<a href={href} target="_blank" rel= "noopener noreferer">{text}</a>
+
+<style>
+
+    a{
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        padding: .5rem;
+        border-radius: 10px;
+        transition: all .3s ease;
+        display: inline-block;
+    }
+
+    a:hover{
+        background-color: var(--c_enfasis);
+        transform: scale(1.1);
+        translate: 0 -5px;
+        box-shadow: 0 4px 10px black;
+    }
+
+    @media screen and (min-width:767px) {
+        a{
+            font-size: 1.5rem;
+        }
+    }
+
+</style>
